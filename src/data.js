@@ -130,13 +130,48 @@ const data = {
           },
         ],
       },
+      {
+        elements: [
+          {
+            type: "html",
+            html: "<h4>Change management</h4>",
+          },
+          {
+            name: "communication-plan",
+            title:
+              "Piano di comunicazione: Hai una strategia per aumentare la consapevolezza interna sull'IA?",
+            description:
+              "Utilizzare webinar interni o newsletter può informare il personale sui progetti IA in arrivo, come l'automazione delle attività di inserimento dati di routine.",
+            type: TYPE,
+            choices: CHOICES,
+          },
+          {
+            name: "training",
+            title:
+              "Programmi di formazione: C'è un programma di formazione per il personale per familiarizzare con gli strumenti IA?",
+            description:
+              "Un robusto programma di formazione dovrebbe includere moduli di inserimento per i nuovi assunti e corsi di aggiornamento per il personale esistente, con un impegno per l'educazione continua man mano che le tecnologie IA si evolvono.",
+            type: TYPE,
+            choices: CHOICES,
+          },
+          {
+            name: "pilot",
+            title:
+              "Test pilota: Hai validato le soluzioni IA attraverso progetti pilota a basso rischio?",
+            description:
+              "I test pilota di successo, come l'automazione di una specifica funzione di servizio clienti, possono fungere da prova concettuale e favorire una maggiore accettazione dell'IA in tutta l'organizzazione",
+            type: TYPE,
+            choices: CHOICES,
+          },
+        ],
+      },
   ],
   showQuestionNumbers: "off",
-  pageNextText: "Avanti",
+  pageNextText: "Continua",
   completeText: "Invia",
   showPrevButton: false,
   firstPageIsStarted: true,
-  startSurveyText: "Inizia il test",
-  completedHtml: "Grazie!",
+  startSurveyText: "Inizia!",
+  completedHtml: "Grazie per aver completato l'assessment di {deepers_!",
 };
 export default data;

@@ -32,9 +32,7 @@ Test pilota: Hai validato le soluzioni IA attraverso progetti pilota a basso ris
 
 ### Considerazioni speciali per marketing, vendite, servizio clienti
 
-Identificazione dei compiti: Hai identificato compiti che l'IA può automatizzare o potenziare? Automatizzare processi come il punteggio dei lead o l'integrazione dei clienti può migliorare l
-
-'efficienza e la coerenza.
+Identificazione dei compiti: Hai identificato compiti che l'IA può automatizzare o potenziare? Automatizzare processi come il punteggio dei lead o l'integrazione dei clienti può migliorare l'efficienza e la coerenza.
 
 Valutazione degli strumenti: Hai ricercato e testato strumenti IA adatti alle tue funzioni specifiche? Esempi includono il testing A/B di chatbot per il servizio clienti guidati dall'IA, la valutazione di strumenti IA per l'analisi dei sentimenti o la valutazione di algoritmi IA per l'ottimizzazione delle scorte.
 

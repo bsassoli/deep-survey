@@ -1,0 +1,15 @@
+.fira-code-deepers {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing:"auto";
+  font-weight:600;
+  font-style:normal;
+}
+
+.green-deepers {
+    color:rgb(51, 253, 51);
+    font-size: x-large;
+}
+
+.title {
+    margin-left: 1.5rem;
+}
