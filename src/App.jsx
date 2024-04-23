@@ -12,7 +12,7 @@ function App() {
   const survey = new Model(surveyJson);
   survey.applyTheme(ContrastDarkPanelless);
 
-  survey.onComplete.add((sender, options) => {
+  survey.onComplete.add((sender) => {
     console.log(JSON.stringify(sender.data, null, 3));
   });
 
