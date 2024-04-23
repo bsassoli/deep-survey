@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <h1>Deepers Survey</h1>
-      <Survey model={survey} />;
+      <Survey model={survey} />
     </>
   );
 }
