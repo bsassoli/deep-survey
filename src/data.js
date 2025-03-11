@@ -21,7 +21,7 @@ const data = {
       elements: [
         {
           type: "html",
-          html: "<h4>Fai il nostro test per valutare quanto è preparata la tua azienda.</h4>",
+          html: "<h3>Valuta quanto è AI-ready la tua azienda.</h3>",
         },
       ],
     },
@@ -206,7 +206,7 @@ const data = {
   completeText: "Invia",
   showPrevButton: false,
   firstPageIsStarted: true,
-  startSurveyText: "Inizia!",
-  completedHtml: "Grazie per aver completato l'assessment di {deepers_!",
+  startSurveyText: "Inizia l'assessment!",
+  completedHtml: "Grazie per aver completato l'AI assessment",
 };
 export default data;

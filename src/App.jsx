@@ -3,14 +3,14 @@ import "./App.css";
 import "./index.css";
 import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
-import { ContrastDarkPanelless } from "survey-core/themes/contrast-dark-panelless";
+import { SolidLight } from "survey-core/themes/solid-light";
 import data from "./data";
 
 
 function App() {
   const surveyJson = data;
   const survey = new Model(surveyJson);
-  survey.applyTheme(ContrastDarkPanelless);
+  survey.applyTheme(SolidLight);
 
   survey.onComplete.add((sender) => {
     console.log(JSON.stringify(sender.data, null, 3));
@@ -19,14 +19,6 @@ function App() {
 
   return (
     <>
-      <p className="title fira-code-deepers">
-        <span className="green-deepers">&#123;</span>
-        deepers
-        <span className="green-deepers">_</span>
-        </p>
-      <h1 className="title">AI readiness assessment</h1>
-
-
       <Survey model={survey} />
     </>
   );
