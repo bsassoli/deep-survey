@@ -43,7 +43,7 @@ const data = {
         {
           name: "desired-outcomes",
           title:
-            "Risultati attesi: Hai definito metriche di successo per l'implementazione dell'IA? ",
+            "Risultati attesi: Hai definito metriche di successo per l'implementazione dell'IA?",
           description:
             "Metriche come la riduzione dei costi operativi, l'aumento dell'impegno dei clienti o il miglioramento dei tassi di conversione dei potenziali clienti ti permettono di misurare oggettivamente l'efficacia dell'IA.",
           type: TYPE,
@@ -58,6 +58,15 @@ const data = {
           type: TYPE,
           choices: CHOICES,
         },
+        {
+          name: "future-planning",
+          title:
+            "Pianificazione futura: Hai un processo in atto per tenere d'occhio le tendenze dell'IA per future adattamenti?",
+          description:
+            "Sfruttare i rapporti di settore e le consulenze con esperti di IA per identificare e valutare continuamente le nuove tecnologie pertinenti agli obiettivi aziendali.",
+          type: TYPE,
+          choices: CHOICES,
+        },
       ],
     },
     {
@@ -65,15 +74,6 @@ const data = {
         {
           type: "html",
           html: "<h4>Organizzazione e HR.</h4>",
-        },
-        {
-          name: "technical-infrastructure",
-          title:
-            "Infrastruttura tecnica: I tuoi dati sono organizzati, puliti e pronti?",
-          description:
-            "Il tuo stack esistente è compatibile? La tua infrastruttura IT è pronta per supportare l'espansione?",
-          type: TYPE,
-          choices: CHOICES,
         },
         {
           name: "internal-skills",
@@ -129,11 +129,47 @@ const data = {
           choices: CHOICES,
         },
         {
-          name: "KPI-monitoring",
+          name: "performance-monitoring",
           title:
-            "KPI e monitoraggio: Hai stabilito metriche di performance e cicli di feedback?",
+            "Monitoraggio delle performance: Hai stabilito KPI chiari e sistemi di misurazione per le tue iniziative di IA?",
           description:
-            "Stabilire KPI chiari e cicli di feedback regolari permette di monitorare l'efficacia delle soluzioni AI implementate e apportare correzioni tempestive.",
+            "Stabilire KPI chiari permette di monitorare l'efficacia delle soluzioni AI implementate e di dimostrare il loro impatto sul business.",
+          type: TYPE,
+          choices: CHOICES,
+        },
+      ],
+    },
+
+    {
+      elements: [
+        {
+          type: "html",
+          html: "<h4>Gestione ongoing e cicli di feedback</h4>",
+        },
+        {
+          name: "feedback-loops",
+          title:
+            "Cicli di feedback: Hai un processo strutturato per valutare continuamente l'efficacia delle tue soluzioni IA?",
+          description:
+            "Stabilire un team dedicato o programmare revisioni periodiche per valutare l'efficacia delle soluzioni implementate permette di migliorare continuamente le performance.",
+          type: TYPE,
+          choices: CHOICES,
+        },
+        {
+          name: "continuous-improvement",
+          title:
+            "Miglioramento continuo: Hai previsto processi di aggiornamento e ottimizzazione dei modelli IA nel tempo?",
+          description:
+            "L'efficacia dei modelli di IA tende a degradarsi nel tempo se non vengono aggiornati con nuovi dati e ricalibrati in base ai cambiamenti del contesto operativo.",
+          type: TYPE,
+          choices: CHOICES,
+        },
+        {
+          name: "user-adoption",
+          title:
+            "Adozione degli utenti: Monitori e lavori attivamente per aumentare l'adozione degli strumenti IA da parte degli utenti finali?",
+          description:
+            "Il successo delle iniziative di IA dipende in larga misura dall'effettiva adozione e utilizzo da parte degli utenti finali, sia interni che esterni all'organizzazione.",
           type: TYPE,
           choices: CHOICES,
         },
@@ -143,102 +179,41 @@ const data = {
       elements: [
         {
           type: "html",
-          html: "<h4>Marketing, sales, CRM</h4>",
+          html: "<h4>Governance, compliance ed etica</h4>",
         },
         {
-          name: "tasks-identification",
+          name: "governance-framework",
           title:
-            "Identificazione dei compiti: Hai identificato compiti che l'IA può automatizzare o potenziare?",
+            "Framework di governance: La tua organizzazione ha definito processi decisionali e responsabilità per l'adozione dell'IA?",
           description:
-            "Automatizzare processi come il punteggio dei lead o l'integrazione dei clienti può migliorare l'efficienza e la coerenza.",
+            "Definire chiaramente chi prende le decisioni sull'adozione, l'implementazione e la gestione dell'IA aiuta a garantire un'adozione coerente e responsabile.",
           type: TYPE,
           choices: CHOICES,
         },
         {
-          name: "tools-evaluation",
+          name: "regulatory-compliance",
           title:
-            "Valutazione degli strumenti: Hai ricercato e testato strumenti IA adatti alle tue funzioni specifiche?",
+            "Compliance normativa: Hai valutato come le leggi e le normative sulla privacy e sulla protezione dei dati influiscono sulle tue iniziative di IA?",
           description:
-            "Esempi includono il testing A/B di chatbot per il servizio clienti guidati dall'IA, la valutazione di strumenti IA per l'analisi dei sentimenti o la valutazione di algoritmi IA per l'ottimizzazione delle scorte.",
+            "Le normative come il GDPR, la CCPA e altre leggi sulla privacy possono influenzare significativamente come l'IA può essere implementata e utilizzata.",
           type: TYPE,
           choices: CHOICES,
-        },
-        {
-          name: "user-training",
-          title:
-            "Formazione degli utenti: I membri del team sono formati sugli strumenti IA scelti?",
-          description:
-            "Per esempio, formare i team di vendita sugli strumenti IA per l'analitica predittiva può consentire loro di individuare meglio i potenziali lead.",
-          type: TYPE,
-          choices: CHOICES,
-        },
-      ],
-    },
-    {
-      elements: [
-        {
-          type: "html",
-          html: "<h4>Gestione ongoing ed evoluzione</h4>",
         },
         {
           name: "IP-protection",
           title:
-            "Protezione della proprietà intellettuale: La tua organizzazione ha una strategia in corso per proteggere i diritti di proprietà intellettuale nell'IA?",
+            "Protezione della proprietà intellettuale: La tua organizzazione ha una strategia per proteggere i diritti di proprietà intellettuale nell'IA?",
           description:
             "Le strategie possono includere la sicurezza dei set di dati proprietari, la licenza di algoritmi di terze parti o la stipula di accordi di non divulgazione con collaboratori e fornitori.",
           type: TYPE,
           choices: CHOICES,
         },
         {
-          name: "feedback-loops",
+          name: "ethical-bias-assessment",
           title:
-            "Cicli di feedback: Hai un processo in atto per raccogliere continuamente feedback sulle prestazioni di utenti e sistemi?",
+            "Considerazioni etiche e bias: Hai procedure per identificare e mitigare bias e questioni etiche nei tuoi sistemi di IA?",
           description:
-            "Stabilire un team dedicato o programmare revisioni trimestrali per valutare l'efficacia delle soluzioni implementate permette di migliorare continuamente le performance.",
-          type: TYPE,
-          choices: CHOICES,
-        },
-        {
-          name: "future-planning",
-          title:
-            "Pianificazione futura: Hai un processo in atto per tenere d'occhio le tendenze dell'IA per future adattamenti?",
-          description:
-            "Sfruttare i rapporti di settore e le consulenze con esperti di IA per identificare e valutare continuamente le nuove tecnologie pertinenti agli obiettivi aziendali.",
-          type: TYPE,
-          choices: CHOICES,
-        },
-      ],
-    },
-    {
-      elements: [
-        {
-          type: "html",
-          html: "<h4>Etica e compliance</h4>",
-        },
-        {
-          name: "ethical-framework",
-          title:
-            "Framework etici: Hai implementato framework etici per l'uso dell'IA nella tua organizzazione?",
-          description:
-            "Adottare linee guida etiche per lo sviluppo e l'utilizzo dell'IA garantisce che le soluzioni implementate rispettino valori fondamentali e normative vigenti.",
-          type: TYPE,
-          choices: CHOICES,
-        },
-        {
-          name: "transparency",
-          title:
-            "Trasparenza: Esistono procedure per garantire la trasparenza delle decisioni basate sull'IA?",
-          description:
-            "Implementare meccanismi che rendano comprensibili e spiegabili le decisioni prese dai sistemi di IA aumenta la fiducia degli utenti e degli stakeholder.",
-          type: TYPE,
-          choices: CHOICES,
-        },
-        {
-          name: "bias-assessment",
-          title:
-            "Valutazione dei bias: Hai valutato i rischi di bias nei tuoi dati e modelli di IA?",
-          description:
-            "Identificare e mitigare potenziali pregiudizi nei dati di addestramento e negli algoritmi è essenziale per garantire risultati equi e imparziali.",
+            "Identificare e mitigare potenziali pregiudizi nei dati e negli algoritmi, e valutare l'impatto etico dell'IA sugli stakeholder, sono passaggi cruciali per un'implementazione responsabile.",
           type: TYPE,
           choices: CHOICES,
         },
@@ -283,7 +258,16 @@ const data = {
       elements: [
         {
           type: "html",
-          html: "<h4>Integrazione tecnologica</h4>",
+          html: "<h4>Integrazione tecnologica e infrastruttura</h4>",
+        },
+        {
+          name: "technical-infrastructure",
+          title:
+            "Infrastruttura tecnica: I tuoi sistemi e la tua infrastruttura IT sono pronti per supportare soluzioni di IA?",
+          description:
+            "Valutare se l'infrastruttura esistente ha la capacità di elaborazione, lo storage e la connettività necessari per supportare i carichi di lavoro dell'IA.",
+          type: TYPE,
+          choices: CHOICES,
         },
         {
           name: "legacy-integration",
@@ -304,11 +288,11 @@ const data = {
           choices: CHOICES,
         },
         {
-          name: "infrastructure-needs",
+          name: "scalability-planning",
           title:
-            "Esigenze infrastrutturali: Hai valutato le esigenze di infrastruttura per implementare l'IA a scala?",
+            "Pianificazione della scalabilità: Hai valutato come scalare le tue soluzioni IA man mano che crescono?",
           description:
-            "Pianificare l'infrastruttura necessaria in termini di capacità di calcolo, storage e rete per garantire prestazioni ottimali dei sistemi di IA in produzione.",
+            "Pianificare la scalabilità dell'infrastruttura in termini di capacità di calcolo, storage e rete per garantire che i sistemi di IA possano crescere con il tuo business.",
           type: TYPE,
           choices: CHOICES,
         },
